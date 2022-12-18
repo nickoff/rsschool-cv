@@ -1,13 +1,93 @@
-.header, footer {
+@font-face {
+	font-family: 'Jost';
+	src: url("assets/fonts/Jost-Regular.ttf");
+	font-weight: 400;
+   }
+
+* {
+	box-sizing: border-box;
+  }
+  
+html {
+	scroll-behavior: smooth;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header {
 	background-color: #4f5664;
 }
 
 body {
-	font-size: 18px;
+	font-family: 'Jost';
 	margin: 0;
 	padding: 0;
+	font-size: 20px;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+  }
+
+  .nav-list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+  }
+  .nav-link {
+  color: azure;
+  line-height: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.nav-link:hover {
+	color: #c6982b;
+  }
+
+  .link {
+	text-decoration: none;
+	color: #c6982b;
+	transition: color 0.5s;
+  }
+
+  .link:hover {
+	color:#4f5664;
+  }
+
+  .footer {
+	min-height: 80px;
+	padding: 15px;
+	margin-top: 50px;
+	background-color: #4f5664;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  }
+
+  .footerContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  }
+
+  .logoRsschool {
+	height: 50px;
+	padding: 0 50px;
+  }
+
+  .footer-link {
+	color: azure;
+	transition: 0.5s;
+	text-decoration: none;
+	padding: 0 50px;
+  }
+  
+  .footer-link:hover {
+	  color: #c6982b;
   }
