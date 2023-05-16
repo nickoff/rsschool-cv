@@ -4,7 +4,7 @@
 * E-mail: v3136820@gmail.com
 * Github: [Nickoff](https://github.com/nickoff)
 # About me
-Hello. I am 38 years old. I work in developer company. Programming is my hobby.
+Hello. I'm 38 years old. I work by project management for construction at the developer's company. Programming and frontend development while is  a hobby of mine.
 # Education
 Major - Architecture
 Belarusian National Technical University
@@ -40,5 +40,10 @@ Belarusian National Technical University
 * Belarusian - native
 * Russian - native
 * English - A1
+
 # Experience
-[Plants](https://rolling-scopes-school.github.io/nickoff-JSFEPRESCHOOL2022Q4/plants/)
+* [Plants](https://rolling-scopes-school.github.io/nickoff-JSFEPRESCHOOL2022Q4/plants/)
+* [Shelter](https://rolling-scopes-school.github.io/nickoff-JSFE2023Q1/shelter/)
+* [Virtual keyboard](https://nickoff.github.io/virtual-keyboard/)
+* [My github](https://github.com/nickoff)
+* [My codewars](https://www.codewars.com/users/rsschool_6866b6fbe612d797)
