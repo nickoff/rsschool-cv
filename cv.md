@@ -1,8 +1,7 @@
 # Mikalai Alikhnovich
 # Contacts
-* Phone: +375 (29) 313-68-20
-* E-mail: v3136820@gmail.com
 * Github: [Nickoff](https://github.com/nickoff)
+* Telegram: [Nickolay](https://t.me/mikalai4)
 # About me
 Hello. I'm 38 years old. I work by project management for construction at the developer's company. Programming and frontend development while is  a hobby of mine.
 # Education
