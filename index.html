@@ -36,14 +36,13 @@
             <h2>Contacts</h2>
             <ul>
                 <li>Location: Belarus</li>
-                <li>Phone: +375 (29) 313-68-20</li>
-                <li>E-mail: <a href="mailto:v3136820@gmail.com" class="link">v3136820@gmail.com</a></li>
+                <li>Telegram: <a href="https://t.me/mikalai4" class="link">Nickolay</a></li>
                 <li>GitHub: <a href="https://github.com/nickoff" class="link">Nickoff</a></li>
             </ul>
         </section>
         <section id="aboutme">
             <h2>About me</h2>
-            <p>Hello. I am 38 years old. I work in developer company. Programming is my hobby.</p>
+            <p>Hello. I’m 39 years old. I’m originally from Belarus and live in a small town near the capital. I have worked in the building industry all my life, including in senior positions. Currently I work in project management for construction at the developer’s company. I have an architecture degree. I finished Belarusian National Technical University. I have basic skills: HTML, CSS, JavaScript, Python also I have basic knowledge of Webpack, CSS Preprocessor, several basic algorithms and data structures. Now I’m on Stage 2 front-end course The Rolling Scopes school.</p>
         </section>
         <section id="education">
             <h2>Education</h2>
@@ -55,23 +54,43 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML (in the process)</li>
-                <li>CSS (in the process)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Typescript</li>
+                <li>Webpack</li>
                 <li>Python (basic)</li>
             </ul>
         </section>
         <section id="courses">
             <h2>Courses</h2>
             <ul>
-                <li>JS/FE Pre-School 2022Q4</li>
+                <li>JS/FE Pre-School 2022Q4 <a href="https://app.rs.school/certificate/18cosizf">Certificate</a></li>
+                <li>JavaScript/Front-end 2023Q1 (in the process)</li>
                 <li>Python (basic) <a href="https://stepik.org/cert/986358">Stepik</a></li>
             </ul>
         </section>
         <section id="code">
             <h2>Code</h2>
-            <code>
-                print("Hello World!")
+            <pre>
+                <code>
+    function convert(input, source, target) {
+        outputDec = 0;
+        index = 0;
+        output = [];
+        for (i = input.length - 1; i >= 0; i--) {
+            outputDec += (source.indexOf(input[index]) * (source.length ** i));
+            index += 1;
+        }
+        if (outputDec == 0) {return target[0]}
+        else { while (outputDec > 0) {
+        output.push(target[outputDec % target.length]);
+        outputDec = Math.floor(outputDec / target.length);
+        }
+        return output.reverse().join('')}
+    }
             </code>
+        </pre>
         </section>
         <section id="languages">
             <h2>Languages</h2>
@@ -84,7 +103,11 @@
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>HTML&amp;CSS: <a href="https://nickoff.github.io/rsschool-cv/">CV#3. CV. Cross-Check</a></li>
+                <li><a href="https://nickoff.github.io/rsschool-cv/">CV#3. CV. Cross-Check</a></li>
+                <li><a href="https://rolling-scopes-school.github.io/nickoff-JSFEPRESCHOOL2022Q4/plants/">Plants</a></li>
+                <li><a href="https://rolling-scopes-school.github.io/nickoff-JSFE2023Q1/shelter/">Shelter</a></li>
+                <li><a href="https://nickoff.github.io/virtual-keyboard/">Virtual keyboard"></a></li>
+                <li><a href="https://rolling-scopes-school.github.io/nickoff-JSFE2023Q1/minesweeper/">Minesweeper</a></li>
             </ul>
         </section>
     </div>
@@ -94,7 +117,7 @@
                 <a href="https://rs.school/js/">
                     <img class="logoRsschool" src="https://rs.school/images/rs_school_js.svg" alt="RS School logo">
                 </a>
-                2022
+                2023
                 <a href="https://github.com/nickoff" class="footer-link">Me on GitHub</a>
         </div>
     </footer>
