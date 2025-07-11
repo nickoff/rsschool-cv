@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
+      <div class="container">
         <nav>
-            <ul class="nav-list">
-                <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li><a href="#aboutme" class="nav-link">About me</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#courses" class="nav-link">Courses</a></li>
-                <li><a href="#code" class="nav-link">Code</a></li>
-                <li><a href="#languages" class="nav-link">Languages</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-            </ul>
+          <ul class="nav-list">
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li><a href="#aboutme" class="nav-link">About me</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
+            <li><a href="#code" class="nav-link">Code</a></li>
+            <li><a href="#languages" class="nav-link">Languages</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
     </header>
     <main>
-        <div class="container">
-        <section id="profile">
-            <h1>Mikalai Aliakhnovich</h1>
-            <div>
-                <img src="assets/img/photo.jpg" alt="My photo">
-            </div>
-        </section>
-        <section id="contacts">
-            <h2>Contacts</h2>
-            <ul>
-                <li>Location: Belarus</li>
-                <li>Phone: +375 (29) 313-68-20</li>
-                <li>E-mail: <a href="mailto:v3136820@gmail.com" class="link">v3136820@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/nickoff" class="link">Nickoff</a></li>
-            </ul>
-        </section>
-        <section id="aboutme">
-            <h2>About me</h2>
-            <p>Hello. I am 38 years old. I work in developer company. Programming is my hobby.</p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>Major - Architecture<br>
-                Belarusian National Technical University<br>
-                2001-2007
-            </p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML (in the process)</li>
-                <li>CSS (in the process)</li>
-                <li>Python (basic)</li>
-            </ul>
-        </section>
-        <section id="courses">
-            <h2>Courses</h2>
-            <ul>
-                <li>JS/FE Pre-School 2022Q4</li>
-                <li>Python (basic) <a href="https://stepik.org/cert/986358">Stepik</a></li>
-            </ul>
-        </section>
-        <section id="code">
-            <h2>Code</h2>
-            <code>
-                print("Hello World!")
-            </code>
-        </section>
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>Belarusian - native</li>
-                <li>Russian - native</li>
-                <li>English - A1</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>HTML&amp;CSS: <a href="https://nickoff.github.io/rsschool-cv/">CV#3. CV. Cross-Check</a></li>
-            </ul>
-        </section>
+      <div class="container">
+      <section id="profile">
+        <h1>Mikalai Aliakhnovich</h1>
+        <div>
+          <img class="avatar" src="assets/img/photo.jpg" alt="My photo">
+        </div>
+      </section>
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li>Location: Belarus</li>
+          <li>GitHub: <a href="https://github.com/nickoff" class="link">Nickoff</a></li>
+        </ul>
+      </section>
+      <section id="aboutme">
+        <h2>About me</h2>
+        <p>Hello. I'm 41 years old. I'm originally from Belarus and live in a small town near the capital. I have worked in the building industry all my life, including in senior positions. Currently I work in project management for construction at the developer’s company. I have an architecture degree. I have skills: HTML, CSS, JavaScript.</p>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <p>Major - Architecture<br>
+          Belarusian National Technical University<br>
+          2001-2007
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section id="courses">
+        <h2>Courses</h2>
+        <ul>
+          <li>JS/FE Pre-School 2022Q4</li>
+          <li>Python (basic) <a href="https://stepik.org/cert/986358">Stepik</a></li>
+        </ul>
+      </section>
+      <section id="code">
+        <h2>Code</h2>
+        <code>
+          <pre>
+      function convert(input, source, target) {
+        outputDec = 0;
+        index = 0;
+        output = [];
+        for (i = input.length - 1; i >= 0; i--) {
+          outputDec += (source.indexOf(input[index]) * (source.length ** i));
+          index += 1;
+        }
+        if (outputDec == 0) {return target[0]}
+        else { while (outputDec > 0) {
+          output.push(target[outputDec % target.length]);
+          outputDec = Math.floor(outputDec / target.length);
+        }
+        return output.reverse().join('')}
+      }
+          </pre>
+        </code>
+      </section>
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>Belarusian - native</li>
+          <li>Russian - native</li>
+          <li>English - A1</li>
+        </ul>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>HTML&amp;CSS: <a href="https://nickoff.github.io/rsschool-cv/">CV#3. CV. Cross-Check</a></li>
+        </ul>
+      </section>
     </div>
     </main>
     <footer class="footer">
-        <div class="container footer-container">
-                <a href="https://rs.school/js/">
-                    <img class="logoRsschool" src="https://rs.school/images/rs_school_js.svg" alt="RS School logo">
-                </a>
-                2022
-                <a href="https://github.com/nickoff" class="footer-link">Me on GitHub</a>
-        </div>
+      <div class="container footer-container">
+        <a href="https://rs.school/courses/javascript-preschool-ru">
+          <img class="logoRsschool" src="assets/img/logo-rsschool3.png" alt="RS School logo">
+        </a>
+        2025
+        <a href="https://github.com/nickoff" class="footer-link">Me on GitHub</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
