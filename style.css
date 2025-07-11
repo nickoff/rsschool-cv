@@ -1,89 +1,119 @@
 @font-face {
-	font-family: 'Jost';
-	src: url("assets/fonts/Jost-Regular.ttf");
-	font-weight: 400;
-   }
+  font-family: 'Jost';
+  src: url("assets/fonts/Jost-Regular.ttf");
+  font-weight: 400;
+}
 
 * {
-	box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
 html {
-	scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  .container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+section {
+	display: flex;
+	border-top: #4f5664 solid 1px;
+}
 
-  .header {
-	background-color: #4f5664;
+p {
+	padding: 20px;
+	margin: 0;
+}
+
+section > :first-child {
+	min-width: 30%;
+	margin: 0;
+	padding: 20px;
+	text-align: end;
+	border-right: #4f5664 solid 1px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #4f5664;
+
 }
 
 body {
-	font-family: 'Jost';
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-  }
+  font-family: 'Jost';
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .nav-list {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	list-style-type: none;
-  }
-  .nav-link {
+.nav-list {
+  display: flex;
+	margin: 5px 0;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link {
   color: azure;
   line-height: 50px;
   transition: 0.5s;
   text-decoration: none;
   padding: 0 20px;
+  transition: color 0.5s;
 }
 
 .nav-link:hover {
-	color: #c6982b;
-  }
+  color: #c6982b;
+  transition: color 0.5s;
+}
 
-  .link {
-	text-decoration: none;
-	color: #c6982b;
-	transition: color 0.5s;
-  }
+.link {
+  text-decoration: none;
+  color: #c6982b;
+  transition: color 0.5s;
+}
 
-  .link:hover {
-	color:#4f5664;
-  }
+.link:hover {
+  color:#4f5664;
+}
 
-  .footer {
-	background-color: #4f5664;
-  }
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+	padding: 20px;
+}
 
-  .footer-container {
-	min-height: 80px;
-	background-color: #4f5664;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
+.footer {
+  background-color: #4f5664;
+}
 
-  .logoRsschool {
-	height: 50px;
-	padding: 0 50px;
-  }
+.footer-container {
+  min-height: 80px;
+  background-color: #4f5664;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .footer-link {
-	color: azure;
-	transition: 0.5s;
-	text-decoration: none;
-	padding: 0 50px;
-  }
-  
-  .footer-link:hover {
-	  color: #c6982b;
-  }
+.logoRsschool {
+  height: 35px;
+  padding: 0 20px;
+}
+
+.footer-link {
+  color: azure;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.footer-link:hover {
+  color: #c6982b;
+}
