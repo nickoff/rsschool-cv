@@ -71,21 +71,15 @@
         <h2>Code</h2>
         <pre>
           <code>
-      function convert(input, source, target) {
-        outputDec = 0;
-        index = 0;
-        output = [];
-        for (i = input.length - 1; i >= 0; i--) {
-          outputDec += (source.indexOf(input[index]) * (source.length ** i));
-          index += 1;
+      import { ReactNode } from 'react';
+
+        interface RootLayoutProps {
+          children: ReactNode;
+        }    
+  
+      export default function RootLayout({ children }: RootLayoutProps) {
+        return children;
         }
-        if (outputDec == 0) {return target[0]}
-        else { while (outputDec > 0) {
-          output.push(target[outputDec % target.length]);
-          outputDec = Math.floor(outputDec / target.length);
-        }
-        return output.reverse().join('')}
-      }
           </code>
         </pre>
       </section>
